@@ -129,9 +129,9 @@ generate(model, "the cat", max_new_tokens=5)
 
 ```mermaid
 graph LR
-    A[Prompt: "the cat"] --> B[Compute K₁,V₁,K₂,V₂]
-    B --> C[Cache: [K₁,V₁,K₂,V₂]]
-    C --> D[Next: Append K₃,V₃]
+    A[Prompt: the cat] --> B[Compute K1,V1,K2,V2]
+    B --> C[Cache: K1,V1,K2,V2]
+    C --> D[Next: Append K3,V3]
     D --> E[Attention over full cache]
 ```
 
